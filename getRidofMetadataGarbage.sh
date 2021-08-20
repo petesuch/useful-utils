@@ -1,4 +1,5 @@
 ## getRidofMetadataGarbage.sh
+## Danger! Danger!  Please review before using. 
 
 find . -type f -name *.class -delete
 find . -type f -name .metadata -delete
