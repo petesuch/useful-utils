@@ -1,10 +1,16 @@
 
 /* rmdoseol.c
  *
- *  This program finds the ^M eol character and deletes it.
- *   This version accepts one file at a time.
- *  Peter Suchsland
- *
+ *  This program finds the ^M eol character and deletes it.  IF I understood Git better I probabably would never 
+ *   have written it.  BTW .gitattributes is what you want to edit.
+ *   This version accepts one file at a time and replaces it.  
+ *   THEREFORE make sure you are only doing this operation on real text files.
+ *   So perhaps writing a script the determines whether the bunch of files you want to do this action on include:
+ *     $ "file blahblah.c | grep text"
+ *        would be prudent indeed.
+ *  author: Peter Suchsland
+ *   compile like so:  
+ *    $ gcc -o rmdoseol.exe rmdoseol-0.1.c
  */
 
 #include<stdlib.h>
