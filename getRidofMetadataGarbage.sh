@@ -1,5 +1,7 @@
 ## getRidofMetadataGarbage.sh
-## Danger! Danger!  Please review before using. 
+
+##  Netbeans and Eclipse leave behind a lot of junk. This is an attempt to tidy
+##  up and remove everything but the src files
 
 find . -type f -name *.class -delete
 find . -type f -name .metadata -delete

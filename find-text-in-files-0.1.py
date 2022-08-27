@@ -1,14 +1,17 @@
 # findtextinfiles.py
-#   Walks through a directory looking for a matchword with files that have the
-#   specified extension.
+
+#  Looking for a specific word or phrase in a file but you forgot where it is?
+#  Tis program walks through a directory looking for a matchword with files
+#  that have the specified extension. Using Purepath means it should work in
+#  windows just as well as Linux
 
 #   author:Peter Suchsland
 #   last edit: 7/30/2021
 
 #   [ -d, --dir /path/to/directory/ ] Defaults to current working directory
 #   [ -x, --ext .txt ] Look for the pattern in files with the extension .txt
-#   Default is all files.  
-#   EXAMPLE:  
+#   Default is all files.
+#   EXAMPLE:
 #     $ python3 findtextinfiles.py pattern -d /home/peter/ -x .py
 
 
